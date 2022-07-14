@@ -1,0 +1,20 @@
+[debug] [2022-07-13T21:22:03.573Z] ----------------------------------------------------------------------
+[debug] [2022-07-13T21:22:03.576Z] Command:       /usr/local/bin/firebase /Users/faisalmusa/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase projects:create streamss --json
+[debug] [2022-07-13T21:22:03.576Z] CLI Version:   11.2.2
+[debug] [2022-07-13T21:22:03.576Z] Platform:      darwin
+[debug] [2022-07-13T21:22:03.576Z] Node Version:  v16.15.0
+[debug] [2022-07-13T21:22:03.578Z] Time:          Wed Jul 13 2022 17:22:03 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-07-13T21:22:03.578Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-13T21:22:03.586Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-13T21:22:03.594Z] > authorizing via signed-in user (fmusa1018@gmail.com)
+[debug] [2022-07-13T21:22:03.599Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2022-07-13T21:22:03.599Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"streamss","name":"streamss"}
+[debug] [2022-07-13T21:22:03.867Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2022-07-13T21:22:03.867Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2022-07-13T21:22:03.907Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (/Users/faisalmusa/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/faisalmusa/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID streamss. Please try again with a unique project ID.
